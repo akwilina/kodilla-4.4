@@ -1,0 +1,30 @@
+{
+  "name": "kodilla-zad4.4",
+  "version": "1.0.0",
+  "description": "RWD site",
+  "main": "index.js",
+  "scripts": {
+    "test": "kodilla-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akwilina/kodilla-4.4.git"
+  },
+  "keywords": [
+    "RWD",
+    "page"
+  ],
+  "author": "OM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akwilina/kodilla-4.4/issues"
+  },
+  "homepage": "https://github.com/akwilina/kodilla-4.4#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  }
+}

@@ -79,7 +79,7 @@ header a:hover {
     text-transform: uppercase;
 }
 
-/*GRID*/
+/*GRID */
 [class*="col-"] {
     float: left;
     min-height: 1px;
