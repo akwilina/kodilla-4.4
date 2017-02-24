@@ -11,8 +11,6 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-    //grunt w folderze "sass" projektu plik main.sass skompiluje do pliku main.css w katalogu "css"
-    // (najpierw utwórz te katalogi i wrzuć plik sass)
                     'css/main.css': 'sass/main.sass'
                 }
             }
@@ -23,9 +21,9 @@ module.exports = function(grunt) {
             files: [{
                 expand: true,
 
-                cwd: 'images/', //cwd - current working directory, czyli stwórz folder "images" i wrzuć do niego rysunki
+                cwd: 'images/',
                 src: ['**/*.{png,jpg,gif}'],
-                dest: 'images/build/' //wrzuci przerobione zdjęcia do folderu images/build
+                dest: 'images/resize/'
             }]
         }
     },
@@ -39,20 +37,18 @@ module.exports = function(grunt) {
             }
         }
     },
-    // watching CSS files and using the built-in server for static HTML/CSS/JS files. This config alone will launch a
-   // mini-server (using your current working directory as the base), watch your CSS files for changes &
-   // auto-inject those changes into all connected browsers.
+
     browserSync: {
         dev: {
             bsFiles: {
                 src: [
-                    'app/css/*.css',
-                    'app/*html'
+                    'css/*.css',
+                    '*html'
                 ]
             },
             options: {
                 watchTask: true,
-                server: '.app'
+                server: '.'
             }
         }
     }
