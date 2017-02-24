@@ -1,6 +1,3 @@
-/**
- * Created by delola lokal on 2017-02-21.
- */
 module.exports = function(grunt) {
 
     // Project configuration.
